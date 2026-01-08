@@ -41,7 +41,7 @@ function fetchPage(url, callback) {
 
 function run(db) {
         const { execSync } = require('child_process');
-        console.log(`Running node ${process.version} on ${execSync('uname -a').toString().trim()}`);
+        console.log(`Running nodejs ${process.version} on ${execSync('uname -a').toString().trim()}`);
 
 	// Use request to read in pages.
 	fetchPage("https://example.com", function (body) {
